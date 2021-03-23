@@ -1,0 +1,19 @@
+.promo {
+  h2 {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 63px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  &__tagline {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

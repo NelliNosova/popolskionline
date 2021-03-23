@@ -10,9 +10,11 @@ $color-transparent:               rgba(255, 255, 255, 0);
 
 // Base
 
-$color-black:                     #0e0e0e;
+$color-black:                     #333333;
 $color-white:                     #f2f2f2;
 $color-blue:                      #2c39f2;
+$color-grey:                      #f4f4f4;
+$color-accent:                    #85bc91;
 
 // Gradient
 
@@ -21,7 +23,7 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // Typography
 //---------------------------------
 
-$font-family--:                     "", "Arial", sans-serif;
+$font-family--montserrat:                     "Montserrat", "Arial", sans-serif;
 
 // Animation
 //---------------------------------

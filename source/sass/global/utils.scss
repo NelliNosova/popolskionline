@@ -64,3 +64,24 @@
     opacity: 0;
   }
 }
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  padding: 13px 47px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-default-white;
+  border: none;
+  background-color: $color-accent;
+  border-radius: 5px;
+}
+
+.section-header {
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 54px;
+}

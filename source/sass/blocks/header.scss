@@ -4,8 +4,6 @@
   min-height: 100px;
   padding: 0 40px;
 
-  background-color: $color-blue;
-
   &__wrapper {
     display: flex;
     align-items: center;
@@ -13,7 +11,7 @@
 
   a,
   p {
-    color: $color-white;
+    color: $color-black;
   }
 
   ul {
@@ -34,3 +32,14 @@
     display: none;
   }
 }
+
+.header__logo {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  span {
+    font-weight: 700;
+  }
+}
+

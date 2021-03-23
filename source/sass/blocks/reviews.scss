@@ -1,0 +1,35 @@
+.reviews {
+  position: relative;
+}
+
+.review__author-name {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+}
+
+.review__author-town {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.review__author-course {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.review__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.reviews__link {
+  color: $color-black;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-decoration-line: underline;
+}
