@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 
-  @@include("source/html/base/head.html")
-  <title>Список страниц</title>
+@@include("source/html/base/head.html")
+  <title>Языковая школа Светланы Серегиной</title>
 
   <style>
     .container {
@@ -52,24 +52,25 @@
 
 </head>
 <body>
-
+@@include("source/html/base/header.html")
+  <h1 class="visually-hidden">Языковая школа Светланы Серегиной</h1>
   <main>
-    <div class="container">
-      <img src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта">
-      <h1>Список страниц и компонентов</h1>
-      <ol>
-        <li>
-          <a href="components.html">UI Kit — components.html</a>
-        </li>
-        <li>
-          <a href="main.html">Главная — main.html</a>
-        </li>
-        <li>
-          <a href="#">Название страницы (состояние страницы, если отдельное) — ссылка на страницу</a>
-        </li>
-      </ol>
-    </div>
+@@include("source/html/components/promo.html")
+
+@@include("source/html/components/benefits.html")
+
+@@include("source/html/components/about.html")
+
+@@include("source/html/components/reviews.html")
+
+@@include("source/html/components/program.html")
+
+@@include("source/html/components/order.html")
+
+@@include("source/html/components/contacts.html")
   </main>
+@@include("source/html/base/footer.html")
 
 </body>
 </html>
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="keywords" content="польский язык, английский язык, онлайн курсы, репетиторство, разговорные курсы">
+<meta name="description" content="Языковая школа
+Светланы Серегиной">
+
+<!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+<!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+
+<!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+
+<!-- используйте только для шрифта находящегося на первом экране -->
+
+<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Компоненты</title>
+
+  <style>
+    main > .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .components-backwards {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 7px;
+    }
+
+    .components-backwards span:first-child {
+      position: relative;
+      top: -3px;
+
+      display: inline-block;
+      margin-right: 15px;
+
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+
+      transform: scale(2);
+    }
+
+    .components-backwards span:last-child {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .components-backwards + h1 {
+      margin-bottom: 0;
+    }
+
+    .container > section {
+      padding: 20px 0;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-burger" viewBox="0 0 30 30">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black"/>
+</symbol></svg>
+  </div>
+
+  <div class="wrapper">
+    <header class="header ">
+  <div class="header__wrapper">
+    <a class="header__logo"  href="main.html" aria-label="Переход на главную">
+      <span>Языковая школа</span><br>
+      Светланы Серегиной
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list list">
+          <li class="main-nav__item">
+            <a class="main-nav__link "  href="#" >О преподавателе</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link "  href="#" >Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link "  href="#" >Программа</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link "  href="#" >Записаться на урок</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link "  href="#" >Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <div class="container">
+        <a class="components-backwards" href="index.html">
+          <span>&larr;</span>
+          <span>вернуться на разводящую</span>
+        </a>
+        <h1>Компоненты, используемые в вёрстке</h1>
+
+        <section>
+          <h2>Название компонента или группы компонентов</h2>
+
+          <p>Класс компонента \ модификаторы</p>
+          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
+          <div>Компонент</div>
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <!-- <section>
+          <h2></h2>
+
+          <p></p>
+        </section> -->
+      </div>
+    </main>
+
+    <footer class="footer">
+  <ul class="footer__list list">
+    <li class="footer__item">
+      <a class="footer__link"  href="https://www.facebook.com/watch/polskijsserioginoj/">
+        <span class="visually-hedden">Facebook</span>
+      <svg></svg>
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link"  href="ttps://www.youtube.com/channel/UCn8YqumYXV27ZtJYiFKFGVg">
+        <span class="visually-hedden">YouTube</span>
+      <svg></svg>
+      </a>
+    </li>
+  </ul>
+  <p>Все права защищены.</p>
+</footer>
+
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
