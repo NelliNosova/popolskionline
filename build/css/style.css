@@ -547,9 +547,16 @@ button,
   border-radius: 5px; }
 
 .section-header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 800;
-  font-size: 44px;
-  line-height: 54px; }
+  font-size: 30px;
+  line-height: 42px; }
+  @media (min-width: 1024px) {
+    .section-header {
+      font-size: 44px;
+      line-height: 54px; } }
 
 .container {
   width: 100%;
@@ -612,6 +619,27 @@ button,
 .footer {
   min-height: 100px;
   padding: 0 60px; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: auto; }
+
+.navigation__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+  .navigation__arrow--prev {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 .modal {
   position: fixed;
@@ -701,60 +729,212 @@ button,
     pointer-events: auto; }
 
 .main-nav {
+  display: none;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px; }
 
 .promo h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: -20px;
   font-weight: 800;
-  font-size: 52px;
-  line-height: 63px;
-  text-transform: uppercase; }
+  font-size: 34px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: center; }
 
 .promo p {
-  font-size: 22px;
-  line-height: 27px; }
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify; }
 
 .promo__tagline {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px; }
 
+.promo a {
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px; }
+
+@media (min-width: 1024px) {
+  .promo h2 {
+    font-size: 52px;
+    line-height: 63px; }
+  .promo p {
+    font-size: 22px;
+    line-height: 27px; } }
+
+.promo__link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .about p {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px; }
+  text-align: justify; }
+
+.about img {
+  margin-bottom: 0; }
+
+@media (min-width: 1024px) {
+  .about p {
+    font-size: 22px;
+    line-height: 27px; } }
+
+.benefits {
+  position: relative;
+  margin-top: 50px; }
+
+.benefits__box {
+  overflow: hidden; }
+
+.benefits__list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1700%; }
+
+.benefits__item {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px; }
+
+.benefits__svg-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px; }
+
+.benefits__navigation {
+  position: absolute;
+  top: 100px; }
 
 .reviews {
-  position: relative; }
+  position: relative;
+  padding: 0 16px; }
 
-.review__author-name {
-  font-weight: 700;
-  font-size: 31px;
-  line-height: 38px; }
+.reviews__box {
+  overflow: hidden; }
 
-.review__author-town {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 27px; }
+.reviews__list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300%; }
 
-.review__author-course {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px; }
-
-.review__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px; }
+.reviews__item {
+  width: 100%; }
 
 .reviews__link {
+  display: block;
   color: #333333;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
+  text-align: center;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline; }
+
+.reviews__navigation {
+  position: absolute;
+  top: 250px;
+  left: 0; }
+
+.review {
+  padding: 0;
+  margin: 0; }
+  .review img {
+    height: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-clip-path: circle(90px at center);
+            clip-path: circle(90px at center); }
+
+.review__author-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px; }
+  @media (min-width: 1024px) {
+    .review__author-name {
+      font-size: 31px;
+      line-height: 38px; } }
+
+.review__author-town {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px; }
+  @media (min-width: 1024px) {
+    .review__author-town {
+      font-size: 22px;
+      line-height: 27px; } }
+
+.review__author-course {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px; }
+  @media (min-width: 1024px) {
+    .review__author-course {
+      font-size: 22px;
+      line-height: 27px; } }
+
+.review__author-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.review__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  height: 150px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .review__text {
+      font-size: 20px;
+      line-height: 25px; } }
 
 .program p {
   font-weight: 400;

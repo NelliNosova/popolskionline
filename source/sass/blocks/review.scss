@@ -1,0 +1,69 @@
+.review {
+  @include zero;
+
+  img {
+    height: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clip-path: circle(90px at center);
+  }
+}
+
+.review__author-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  @include viewport--lg {
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+.review__author-town {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  @include viewport--lg {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.review__author-course {
+  @include zero;
+
+  margin-top: 20px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+
+  @include viewport--lg {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.review__author-photo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.review__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  height: 150px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  @include viewport--lg {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

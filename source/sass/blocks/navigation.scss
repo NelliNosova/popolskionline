@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.navigation__arrow {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}

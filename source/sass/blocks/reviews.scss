@@ -1,35 +1,36 @@
 .reviews {
   position: relative;
+  padding: 0 16px;
 }
 
-.review__author-name {
-  font-weight: 700;
-  font-size: 31px;
-  line-height: 38px;
+.reviews__box {
+  overflow: hidden;
 }
 
-.review__author-town {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
+.reviews__list {
+  @include zero;
+
+  display: flex;
+  justify-content: center;
+  width: 100% * 3;
 }
 
-.review__author-course {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
-}
-
-.review__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
+.reviews__item {
+  width: 100%;
 }
 
 .reviews__link {
+  display: block;
   color: $color-black;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
+  text-align: center;
   text-decoration-line: underline;
+}
+
+.reviews__navigation {
+  position: absolute;
+  top: 250px;
+  left: 0;
 }

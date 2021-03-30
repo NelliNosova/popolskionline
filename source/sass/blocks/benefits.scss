@@ -1,0 +1,40 @@
+.benefits {
+  position: relative;
+  margin-top: 50px;
+}
+
+.benefits__box {
+  overflow: hidden;
+}
+
+.benefits__list {
+  @include zero;
+
+  display: flex;
+  justify-content: center;
+  width: 100% * 17;
+}
+
+.benefits__item {
+  @include zero;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.benefits__svg-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.benefits__navigation {
+  position: absolute;
+  top: 100px;
+}
+
+

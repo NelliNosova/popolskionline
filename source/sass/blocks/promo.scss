@@ -1,14 +1,22 @@
 .promo {
   h2 {
+    @include zero;
+    
+    margin-top: -20px;
     font-weight: 800;
-    font-size: 52px;
-    line-height: 63px;
+    font-size: 34px;
+    line-height: 52px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   p {
-    font-size: 22px;
-    line-height: 27px;
+    @include zero;
+
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
   }
 
   &__tagline {
@@ -16,4 +24,26 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  a {
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  @include viewport--lg {
+    h2 {
+      font-size: 52px;
+      line-height: 63px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+}
+
+.promo__link-box {
+  display:  flex;
 }

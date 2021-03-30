@@ -81,7 +81,15 @@
 }
 
 .section-header {
+  @include zero;
+
+  margin-bottom: 20px;
   font-weight: 800;
-  font-size: 44px;
-  line-height: 54px;
+  font-size: 30px;
+  line-height: 42px;
+
+  @include viewport--lg {
+    font-size: 44px;
+    line-height: 54px;
+  }
 }

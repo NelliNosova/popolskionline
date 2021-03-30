@@ -52,16 +52,19 @@
 
 </head>
 <body>
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
 @@include("source/html/base/header.html")
   <h1 class="visually-hidden">Языковая школа Светланы Серегиной</h1>
   <main>
 <div class="container">
   @@include("source/html/components/promo.html")
-</div>
 
-@@include("source/html/components/benefits.html")
 
-<div class="container">
+  @@include("source/html/components/benefits.html")
+
+
   @@include("source/html/components/about.html")
 </div>
 
