@@ -22,6 +22,10 @@
       margin: 26px 0 10px 30px;
       clip-path: none;
     }
+
+    @include viewport--xl {
+      max-width: 580px;
+    }
   }
 
   @include viewport--xl {

@@ -15,6 +15,8 @@
   }
 
   @include viewport--xl {
+    margin-top: 50px;
+
     p {
       font-size: 22px;
       line-height: 27px;
@@ -35,7 +37,7 @@
   @include viewport--lg {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 100%;
   }
 }
@@ -48,6 +50,10 @@
   @include viewport--lg {
     width: 45%;
     max-width: 450px;
+  }
+
+  @include viewport--xl {
+    margin-top: 150px;
   }
 
   &::before {
@@ -67,12 +73,14 @@
   &:nth-child(-n+9)::before {
     content: "0" counter(li-counter);
   }
-
-
 }
 
 .program__link-box {
   display: flex;
+
+  @include viewport--xl {
+    margin-top: 30px;
+  }
 }
 
 .program__link {

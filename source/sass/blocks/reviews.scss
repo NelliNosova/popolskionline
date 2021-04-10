@@ -9,10 +9,28 @@
       padding: 0 30px;
     }
   }
+
+  @include viewport--lg {
+    h2 {
+      padding: 0 40px;
+    }
+  }
+
+  @include viewport--xl {
+    h2 {
+      padding: 0 60px;
+      margin-bottom: 100px;
+    }
+  }
 }
 
 .reviews__box {
   overflow: hidden;
+
+  @include viewport--xl {
+    margin-top: 30px;
+    margin-bottom: 100px
+  }
 }
 
 .reviews__list {
@@ -22,19 +40,15 @@
   display: flex;
   justify-content: center;
   width: 100% * 3;
-
-  @include viewport--md {
-    width: 60% * 3;
-  }
 }
 
 .reviews__item {
   width: 100%;
 
   @include viewport--md {
-    width: 60%;
-    padding-right: 30px;
-    transform: translateX(30%);
+
+    margin-right: 30px;
+    padding: 0 150px;
     opacity: 0.5;
 
     &--active {
@@ -42,8 +56,10 @@
     }
   }
 
-  @include viewport--lg {
-    transform: translateX(40%);
+  @include viewport--xl {
+    width: 100%;
+    margin-right: 0;
+    padding: 0 150px;
   }
 }
 
@@ -59,10 +75,10 @@
 
 .reviews__navigation {
   position: absolute;
-  top: 250px;
+  top: 43%;
   left: 0;
 
-  @include viewport--lg {
+  @include viewport--md {
     padding: 0 40px;
   }
 }

@@ -1,4 +1,14 @@
 .promo {
+  position: relative;
+
+  @include viewport--lg {
+    padding-right: 45%;
+  }
+
+  @include viewport--xl {
+    padding-right: 40%;
+  }
+
   h2 {
     @include zero;
 
@@ -8,6 +18,11 @@
     line-height: 52px;
     text-transform: uppercase;
     text-align: center;
+
+    @include viewport--lg {
+      text-align: left;
+      margin-bottom: 20px
+    }
   }
 
   p {
@@ -21,15 +36,8 @@
 
     @include viewport--lg {
       padding-top: 0;
-      margin-right: 50px;
+      margin-bottom: 30px;
       align-self: center;
-    }
-  }
-
-  &__content-box {
-    @include viewport--lg {
-      display: flex;
-      margin: 30px 0;
     }
   }
 
@@ -38,12 +46,20 @@
 
     @include viewport--lg {
       display: block;
-      min-width: 40%;
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 40%;
+      max-width: 350px;
 
       img {
         max-width: none;
         margin-bottom: 0;
       }
+    }
+
+    @include viewport--xl {
+      max-width: 450px;
     }
   }
 
@@ -57,6 +73,7 @@
 
       @include viewport--lg {
         margin-right: 0;
+        text-align: left;
       }
     }
   }
@@ -65,6 +82,10 @@
     display: inline-block;
     margin: auto;
     margin-top: 20px;
+
+    @include viewport--lg {
+      margin-left: 0;
+    }
   }
 
   @include viewport--xl {

@@ -24,11 +24,13 @@
       width: 20%;
       margin-left: 20px;
       text-align: right;
+      
+      @include viewport--xl {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
   }
 
-  @include viewport--xl {
-    font-size: 18px;
-    line-height: 22px;
-  }
+
 }

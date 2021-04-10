@@ -5,7 +5,7 @@
 
   @include viewport--md {
     max-width: 500px;
-    margin: auto;
+    margin: 30px auto;
   }
 
   @include viewport--lg {
@@ -55,6 +55,10 @@
 .order-form__reference {
   font-size: 14px;
   line-height: 17px;
+
+  @include viewport--xl {
+    margin-left: 30px;
+  }
 
   a {
     color: inherit;

@@ -9,6 +9,10 @@
   @include viewport--lg {
     margin: 50px -40px 0;
   }
+
+  @include viewport--xl {
+    margin: 80px -60px 20px;
+  }
 }
 
 .benefits__box {
@@ -28,6 +32,10 @@
 
   @include viewport--lg {
     width: 32.5% * 17;
+  }
+
+  @include viewport--xl {
+    width: 24.5% * 17;
   }
 }
 
@@ -57,12 +65,20 @@
     transform: translateX(0%);
     opacity: 1;
   }
+
+  @include viewport--xl {
+    width: 24.5%;
+  }
 }
 
 .benefits__svg-box {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+
+  @include viewport--lg {
+    min-height: 180px;
+  }
 }
 
 .benefits__navigation {

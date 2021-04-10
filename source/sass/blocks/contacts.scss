@@ -1,6 +1,10 @@
 .contacts {
   margin-top: 30px;
 
+  @include viewport--xl {
+    margin-top: 80px;
+  }
+
   p {
     @include zero;
 

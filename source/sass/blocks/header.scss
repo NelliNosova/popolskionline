@@ -4,6 +4,10 @@
   min-height: 100px;
   padding: 0 40px;
 
+  @include viewport--xl {
+    padding: 0 60px;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

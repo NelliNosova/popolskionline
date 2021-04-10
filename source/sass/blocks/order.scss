@@ -7,10 +7,18 @@
     padding-right: 40%;
   }
 
+  @include viewport--xl {
+    margin-top: 80px;
+  }
+
   &__tagline {
     @include viewport--lg {
       font-size: 30px;
       line-height: 38px;
+    }
+
+    @include viewport--xl {
+      margin-bottom: 30px;
     }
   }
 
@@ -22,6 +30,18 @@
       position: absolute;
       top: 0;
       right: 0;
+      max-width: 320px;
+    }
+
+    @include viewport--xl {
+      max-width: 421px;
+    }
+  }
+
+  &__book-box {
+    @include viewport--xl {
+      display: flex;
+      margin-top: 105px;
     }
   }
 

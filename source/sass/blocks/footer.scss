@@ -8,6 +8,10 @@
     padding: 0 40px;
   }
 
+  @include viewport--xl {
+    padding: 0 60px;
+  }
+
   p {
     font-size: 10px;
     text-align: right;

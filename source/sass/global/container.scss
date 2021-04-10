@@ -17,6 +17,10 @@
     padding: 0 40px;
   }
 
+  @include viewport--xl {
+    padding: 0 60px;
+  }
+
   &--no-padding {
     @include viewport--sm {
       padding: 0;
