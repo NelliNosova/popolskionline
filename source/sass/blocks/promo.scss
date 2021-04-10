@@ -1,7 +1,7 @@
 .promo {
   h2 {
     @include zero;
-    
+
     margin-top: -20px;
     font-weight: 800;
     font-size: 34px;
@@ -16,13 +16,18 @@
     padding-top: 20px;
     font-size: 16px;
     line-height: 24px;
+    text-indent: 1.5em;
     text-align: justify;
   }
 
   &__tagline {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-indent: 0;
+      text-align: center;
+    }
   }
 
   a {

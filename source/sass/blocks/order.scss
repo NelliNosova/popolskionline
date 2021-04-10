@@ -1,25 +1,11 @@
 .order {
-  label {
-    position: relative;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba($color-black, 0.6);
+  margin-top: 30px;
+
+  &__img {
+    clip-path: polygon(50% 0%, 76% 3%, 92% 14%, 100% 30%, 100% 100%, 50% 100%, 0 100%, 0 30%, 8% 14%, 24% 3%);
   }
 
-  input,
-  textarea {
-    // position: absolute;
-    border: none;
-    border-bottom: 2px solid $color-default-black;
-  }
+
 }
 
-.order-form__reference {
-  font-size: 14px;
-  line-height: 17px;
 
-  a {
-    color: inherit;
-    font-weight: 600;
-  }
-}

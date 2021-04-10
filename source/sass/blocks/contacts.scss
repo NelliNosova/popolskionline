@@ -1,8 +1,22 @@
 .contacts {
+  margin-top: 30px;
+
   p {
+    @include zero;
+
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
+    text-indent: 1.5em;
+    text-align: justify;
+  }
+
+  @include viewport--lg {
+    p {
+      font-size: 22px;
+      line-height: 27px;
+    }
   }
 
   a {

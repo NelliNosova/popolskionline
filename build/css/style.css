@@ -618,7 +618,19 @@ button,
 
 .footer {
   min-height: 100px;
-  padding: 0 60px; }
+  padding: 0 20px; }
+  .footer p {
+    font-size: 10px;
+    text-align: right; }
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .navigation {
   display: -webkit-box;
@@ -750,12 +762,15 @@ button,
   padding-top: 20px;
   font-size: 16px;
   line-height: 24px;
+  text-indent: 1.5em;
   text-align: justify; }
 
-.promo__tagline {
+.promo__tagline p {
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px; }
+  line-height: 24px;
+  text-indent: 0;
+  text-align: center; }
 
 .promo a {
   display: inline-block;
@@ -782,6 +797,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  text-indent: 1.5em;
   text-align: justify; }
 
 .about img {
@@ -791,6 +807,9 @@ button,
   .about p {
     font-size: 22px;
     line-height: 27px; } }
+
+.about__max {
+  display: none; }
 
 .benefits {
   position: relative;
@@ -937,28 +956,94 @@ button,
       line-height: 25px; } }
 
 .program p {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px; }
+  text-indent: 1.5em;
+  text-align: justify; }
 
 .program span {
   font-weight: 700; }
 
+@media (min-width: 1024px) {
+  .program p {
+    font-size: 22px;
+    line-height: 27px; } }
+
+.program__list {
+  padding: 0;
+  margin: 0;
+  counter-reset: li-counter; }
+
+.program__item {
+  counter-increment: li-counter;
+  position: relative;
+  margin-top: 100px; }
+  .program__item::before {
+    content: counter(li-counter);
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 64px;
+    text-align: center;
+    color: #85bc91; }
+  .program__item:nth-child(-n+9)::before {
+    content: "0" counter(li-counter); }
+
+.program__link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .program__link {
+  display: inline-block;
+  margin: 20px auto auto;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px; }
 
-.order label {
-  position: relative;
-  font-size: 20px;
-  line-height: 24px;
-  color: rgba(51, 51, 51, 0.6); }
+.order {
+  margin-top: 30px; }
+  .order__img {
+    -webkit-clip-path: polygon(50% 0%, 76% 3%, 92% 14%, 100% 30%, 100% 100%, 50% 100%, 0 100%, 0 30%, 8% 14%, 24% 3%);
+            clip-path: polygon(50% 0%, 76% 3%, 92% 14%, 100% 30%, 100% 100%, 50% 100%, 0 100%, 0 30%, 8% 14%, 24% 3%); }
 
-.order input,
-.order textarea {
-  border: none;
-  border-bottom: 2px solid #000000; }
+.order-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px; }
+  .order-form label {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 0.6); }
+  .order-form input,
+  .order-form textarea {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #000000; }
+  .order-form textarea {
+    top: -20px; }
 
 .order-form__reference {
   font-size: 14px;
@@ -967,15 +1052,25 @@ button,
     color: inherit;
     font-weight: 600; }
 
-.contacts p {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 27px; }
-
-.contacts a {
-  color: inherit;
-  font-weight: 600;
-  text-decoration: underline; }
+.contacts {
+  margin-top: 30px; }
+  .contacts p {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-indent: 1.5em;
+    text-align: justify; }
+  @media (min-width: 1024px) {
+    .contacts p {
+      font-size: 22px;
+      line-height: 27px; } }
+  .contacts a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
