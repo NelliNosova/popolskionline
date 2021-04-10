@@ -14,7 +14,7 @@
     font-weight: 700;
   }
 
-  @include viewport--lg {
+  @include viewport--xl {
     p {
       font-size: 22px;
       line-height: 27px;
@@ -26,12 +26,29 @@
   @include zero;
 
   counter-reset: li-counter;
+
+  @include viewport--md {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  @include viewport--lg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+  }
 }
 
 .program__item {
   counter-increment: li-counter;
   position: relative;
   margin-top: 100px;
+
+  @include viewport--lg {
+    width: 45%;
+    max-width: 450px;
+  }
 
   &::before {
     content: counter(li-counter);
@@ -50,6 +67,8 @@
   &:nth-child(-n+9)::before {
     content: "0" counter(li-counter);
   }
+
+
 }
 
 .program__link-box {

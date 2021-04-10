@@ -7,6 +7,11 @@
   &__wrapper {
     display: flex;
     align-items: center;
+
+    @include viewport--lg {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   a,
@@ -14,19 +19,6 @@
     color: $color-black;
   }
 
-  ul {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
-
-    list-style: none;
-
-    li {
-      margin-right: 20px;
-    }
-  }
 
   .main-nav__toggle {
     display: none;
@@ -37,6 +29,10 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+
+  @include viewport--lg {
+    min-width: 250px;
+  }
 
   span {
     font-weight: 700;

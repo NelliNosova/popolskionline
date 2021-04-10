@@ -3,6 +3,19 @@
   flex-direction: column;
   margin-top: 30px;
 
+  @include viewport--md {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  @include viewport--lg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: none;
+  }
+
   label {
     position: relative;
     width: 100%;
@@ -10,6 +23,10 @@
     font-size: 20px;
     line-height: 24px;
     color: rgba($color-black, 0.6);
+
+    @include viewport--lg {
+      width: 45%;
+    }
   }
 
   input,
@@ -24,6 +41,10 @@
     border: none;
     background-color: transparent;
     border-bottom: 2px solid $color-default-black;
+
+    // @include viewport--lg {
+    //   width: 45%;
+    // }
   }
 
   textarea {

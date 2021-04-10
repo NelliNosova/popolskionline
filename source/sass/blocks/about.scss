@@ -12,9 +12,19 @@
 
   img {
     margin-bottom: 0;
+    margin: auto;
+
+    clip-path: polygon(50% 0%, 80% 10%, 95% 33%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 5% 32%, 20% 10%);
+
+    @include viewport--lg {
+      max-width: 450px;
+      float: right;
+      margin: 26px 0 10px 30px;
+      clip-path: none;
+    }
   }
 
-  @include viewport--lg {
+  @include viewport--xl {
     p {
       font-size: 22px;
       line-height: 27px;
@@ -24,4 +34,8 @@
 
 .about__max {
   display: none;
+
+  @include viewport--lg {
+    display: block;
+  }
 }

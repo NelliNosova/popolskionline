@@ -1,6 +1,14 @@
 .review {
   @include zero;
 
+  @include viewport--md {
+    text-align: center;
+  }
+
+  // @include viewport--lg {
+  //   display: flex;
+  // }
+
   img {
     height: 190px;
     margin-top: 20px;
@@ -9,12 +17,20 @@
   }
 }
 
+// .review__author-box {
+//   @include viewport--lg {
+//     width: 20%;
+//   }
+// }
+
 .review__author-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
-  @include viewport--lg {
+
+
+  @include viewport--xl {
     font-size: 31px;
     line-height: 38px;
   }
@@ -25,7 +41,7 @@
   font-size: 16px;
   line-height: 18px;
 
-  @include viewport--lg {
+  @include viewport--xl {
     font-size: 22px;
     line-height: 27px;
   }
@@ -40,7 +56,7 @@
   font-size: 16px;
   line-height: 18px;
 
-  @include viewport--lg {
+  @include viewport--xl {
     font-size: 22px;
     line-height: 27px;
   }
@@ -62,7 +78,7 @@
   line-height: 24px;
   text-align: center;
 
-  @include viewport--lg {
+  @include viewport--xl {
     font-size: 20px;
     line-height: 25px;
   }

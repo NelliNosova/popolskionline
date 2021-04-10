@@ -1,6 +1,14 @@
 .reviews {
   position: relative;
   padding: 0 16px;
+
+  @include viewport--md {
+    padding: 0;
+
+    h2 {
+      padding: 0 30px;
+    }
+  }
 }
 
 .reviews__box {
@@ -10,13 +18,33 @@
 .reviews__list {
   @include zero;
 
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100% * 3;
+
+  @include viewport--md {
+    width: 60% * 3;
+  }
 }
 
 .reviews__item {
   width: 100%;
+
+  @include viewport--md {
+    width: 60%;
+    padding-right: 30px;
+    transform: translateX(30%);
+    opacity: 0.5;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  @include viewport--lg {
+    transform: translateX(40%);
+  }
 }
 
 .reviews__link {
@@ -33,4 +61,8 @@
   position: absolute;
   top: 250px;
   left: 0;
+
+  @include viewport--lg {
+    padding: 0 40px;
+  }
 }

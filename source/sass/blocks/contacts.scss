@@ -12,7 +12,7 @@
     text-align: justify;
   }
 
-  @include viewport--lg {
+  @include viewport--xl {
     p {
       font-size: 22px;
       line-height: 27px;

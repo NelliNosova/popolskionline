@@ -2,6 +2,12 @@
   min-height: 100px;
   padding: 0 20px;
 
+  @include viewport--lg {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
   p {
     font-size: 10px;
     text-align: right;
@@ -13,4 +19,8 @@
 
   display: flex;
   justify-content: space-around;
+
+  @include viewport--lg {
+    min-width: 100px;
+  }
 }
